@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.6.1)
+  - Kingfisher (7.2.2)
+  - McPicker (3.0.0)
+  - SnackBar.swift (0.1.0):
+    - SnapKit
+  - SnapKit (5.6.0)
+  - SwiftGifOrigin (1.7.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - Kingfisher (~> 7.0)
+  - McPicker (~> 3.0.0)
+  - SnackBar.swift
+  - SwiftGifOrigin (~> 1.7.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - McPicker
+    - SnackBar.swift
+    - SnapKit
+    - SwiftGifOrigin
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  McPicker: ba38be56a8194faa5249eca4226c364eed628044
+  SnackBar.swift: 79ea4df13ea9e6633137dd6acbd490534d26440d
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+
+PODFILE CHECKSUM: b31bcc6e5a4cfda2b185f5b5b243e6563754b5db
+
+COCOAPODS: 1.11.3

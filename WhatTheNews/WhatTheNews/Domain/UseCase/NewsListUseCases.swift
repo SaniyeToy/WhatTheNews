@@ -8,12 +8,12 @@
 import Foundation
 import Foundation
 
-protocol GlobalTokenUseCaseType {
+protocol NewsListUseCaseType {
     
     func getNewsList(params: [String: Any], completion: @escaping ((Result<NewsResponseModel, Error>) -> Void))
 }
 
-struct GlobalTokenUseCase: GlobalTokenUseCaseType {
+struct NewsListUseCase: NewsListUseCaseType {
     func getNewsList(params: [String: Any], completion: @escaping ((Result<NewsResponseModel, Error>) -> Void)) {
         ApiClient.request(NewsEndPoint.newsList(params: params)) {(_ result: Result<NewsResponseModel, Error>) in
             completion(result)

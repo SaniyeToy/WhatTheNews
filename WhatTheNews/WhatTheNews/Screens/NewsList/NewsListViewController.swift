@@ -16,7 +16,6 @@ class NewsListViewController: UIViewController {
     @IBOutlet weak var newsListTableView: UITableView!
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       newsListTableView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         self.navigationItem.setHidesBackButton(true, animated: true)
         self.navigationController?.navigationBar.backgroundColor = .clear
         self.title = "News List"
@@ -27,7 +26,6 @@ class NewsListViewController: UIViewController {
         self.viewModel?.delegate = self
         newsListTableView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
-    
 
     func navigateToDetails(){
     }
@@ -37,6 +35,7 @@ class NewsListViewController: UIViewController {
 extension NewsListViewController: NewsListDisplayDelegate {
     func displayNews(newsList: [Articles]) {
         self.newsList = newsList
+        newsListTableView.reloadData()
     }
 }
 
@@ -57,11 +56,12 @@ extension NewsListViewController: UITableViewDelegate {
 extension NewsListViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsList?.count ?? 0
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = newsListTableView.dequeueReusableCell(withIdentifier: "cell" , for: indexPath) as? NewsListTableViewCell else {return UITableViewCell() }
-        guard let _ =  newsList?[indexPath.row].url else { return UITableViewCell()}
+        cell.register(news: (newsList?[indexPath.row])!)
         return cell
     }
 }

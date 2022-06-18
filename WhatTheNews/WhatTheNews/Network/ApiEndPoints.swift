@@ -18,7 +18,7 @@ enum NewsEndPoint: APIConfiguration {
     var method: HTTPMethod {
         switch self {
         case .newsList:
-            return .post
+            return .get
         
         }
     }
@@ -50,6 +50,7 @@ enum NewsEndPoint: APIConfiguration {
         
         // Parameters
         var encoding: ParameterEncoding { URLEncoding.default }
+        print(urlRequest)
         return try encoding.encode(urlRequest, with: parameters)
     }
 }

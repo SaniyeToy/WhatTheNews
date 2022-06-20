@@ -60,14 +60,12 @@ extension NewsListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.navigateToDetails(index: indexPath.row)
-       
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
 }
-
 
 //MARK: UITableViewDataSource
 extension NewsListViewController: UITableViewDataSource{

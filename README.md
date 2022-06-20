@@ -32,6 +32,9 @@
 
 ## Usage <a name="Usage"></a>
 
+
+
+
 ## Requiremonts <a name="Requiremonts"></a>
 Versions I use:
 - `ruby 2.6.3p62`
@@ -44,8 +47,8 @@ Versions I use:
 
  <table>
   <tr>
-    <td>myTunes List View </td>
-    <td>MyTunes Details View</td>
+    <td>List View </td>
+    <td>Details View</td>
  
 
   </tr>

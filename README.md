@@ -3,9 +3,9 @@
  WhatTheNews🚀
 </h1>
 
-<img src="https://i.gifer.com/14u9.gif" align="right" width="380" height="400">
+<img src="https://user-images.githubusercontent.com/75203610/174563737-49ba0859-ac7c-4af5-94e9-388ed9587402.gif" align="center" width="1000" height="500">
 
-What The News lets you find articles and breaking news headlines from news sources and blogs on the web with the News API
+# What The News lets you find articles and breaking news headlines from news sources and blogs on the web with the News API
 
 # Table of contents
 1. [Features](#Features)
@@ -24,8 +24,7 @@ What The News lets you find articles and breaking news headlines from news sourc
 - Rest Api operations are done using Alamofire library
 - With the KingFisher library, the images are kept in the cache and the loading of the images is made easier
 - Repeated code blocks recommended for clean coding are combined in flexible methods
-- Care was taken to ensure that in-app method and variable naming are in English and comprehensible
-- 
+- Care was taken to ensure that in-app method and variable naming are in English and comprehensible 
 ## Used Methods and Libraries <a name="UsedMethodsandLibraries"></a>
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 - [KingFisher](https://github.com/onevcat/Kingfisher)

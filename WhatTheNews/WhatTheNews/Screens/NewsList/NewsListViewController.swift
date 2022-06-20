@@ -17,8 +17,21 @@ class NewsListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.setHidesBackButton(true, animated: true)
-        self.navigationController?.navigationBar.backgroundColor = .clear
-        self.title = "News List"
+        //self.navigationController?.navigationBar.backgroundColor = .clear
+        //self.navigationItem.prompt = "News"
+        //self.navigationItem.title = "News"
+        self.title = "News"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor.systemRed
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
     override func viewDidLoad() {
@@ -27,7 +40,10 @@ class NewsListViewController: UIViewController {
         newsListTableView.register(UINib(nibName: "NewsListTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
     }
 
-    func navigateToDetails(){
+    func navigateToDetails(index: Int){
+        let builder = NewsDetailsDetailsBuilder(newsdetails: newsList![index])
+        builder.build().modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(builder.build(), animated: true)
     }
 }
 
@@ -43,11 +59,12 @@ extension NewsListViewController: NewsListDisplayDelegate {
 extension NewsListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.navigateToDetails(index: indexPath.row)
        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 150
     }
 }
 
@@ -56,7 +73,6 @@ extension NewsListViewController: UITableViewDelegate {
 extension NewsListViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsList?.count ?? 0
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

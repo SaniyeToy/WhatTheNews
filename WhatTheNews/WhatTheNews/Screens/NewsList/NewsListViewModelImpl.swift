@@ -9,7 +9,7 @@ import Foundation
 import Foundation
 
 class NewsListViewModelImpl: NewsListViewModel{
- 
+    
     weak var delegate: NewsListDisplayDelegate?
     var newsList: [Articles]?
     let service: NewsListUseCaseType
@@ -19,7 +19,7 @@ class NewsListViewModelImpl: NewsListViewModel{
     }
     
     func fetchNewsList() {
-
+        
         var params: [String: Any] = [:]
         params["apiKey"] = "c49befaba4ab4498a011c607370a88b4"
         params["country"] = "tr"

@@ -16,23 +16,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="284" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQo-4M-l0p">
-                        <rect key="frame" x="0.0" y="8" width="284" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQo-4M-l0p">
+                        <rect key="frame" x="0.0" y="8" width="284" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-WM-dIO">
-                        <rect key="frame" x="0.0" y="44" width="284" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-WM-dIO">
+                        <rect key="frame" x="0.0" y="59.5" width="284" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rTy-WM-dIO" secondAttribute="bottom" constant="10" id="CCk-Iu-6kd"/>
                     <constraint firstAttribute="trailing" secondItem="mQo-4M-l0p" secondAttribute="trailing" id="CaP-ab-iWa"/>
                     <constraint firstItem="rTy-WM-dIO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="a0r-lF-823"/>
-                    <constraint firstItem="rTy-WM-dIO" firstAttribute="top" secondItem="mQo-4M-l0p" secondAttribute="bottom" constant="15" id="aAb-ch-cQI"/>
                     <constraint firstAttribute="trailing" secondItem="rTy-WM-dIO" secondAttribute="trailing" id="aUp-gs-FF6"/>
                     <constraint firstItem="mQo-4M-l0p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bFa-ZE-cg9"/>
                     <constraint firstItem="mQo-4M-l0p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pa4-EO-w5h"/>
@@ -40,7 +40,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="descriptionLabel" destination="rTy-WM-dIO" id="sNF-J8-F4F"/>
+                <outlet property="nameLabel" destination="rTy-WM-dIO" id="sNF-J8-F4F"/>
                 <outlet property="titleLabel" destination="mQo-4M-l0p" id="h6K-Jh-5gU"/>
             </connections>
             <point key="canvasLocation" x="104.34782608695653" y="107.14285714285714"/>

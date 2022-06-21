@@ -32,6 +32,9 @@
 
 ## Usage <a name="Usage"></a>
 
+
+
+
 ## Requiremonts <a name="Requiremonts"></a>
 Versions I use:
 - `ruby 2.6.3p62`
@@ -40,7 +43,22 @@ Versions I use:
 ## Installation <a name="Installation"></a>
 - paste `git clone https://github.com/SaniyeToy/WhatTheNews.git` into terminal
 - `pod install` is written to the file path of the application in the terminal and the application is run on xcode
+ ## Screen Shots <a name="ScreenShots"></a>
+
+ <table>
+  <tr>
+    <td>List View </td>
+    <td>Details View</td>
  
+
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/75203610/174643171-62f0fa54-8d06-450c-b2e1-f83ca4c78a2b.png" width=230 height=480></td>
+     <td><img src="https://user-images.githubusercontent.com/75203610/174643102-a7457541-84e6-41eb-98a7-eb34d249535a.png" width=230 height=480></td>
+    
+   
+  </tr>
+ </table>
 
 ## Communication <a name="Communication"></a>
 - [GitHub](https://github.com/SaniyeToy)

@@ -23,6 +23,7 @@ class NewsDetailsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.topItem?.title = ""
+        self.title = "News Details"
     }
     
     override func viewDidLoad() {
@@ -33,8 +34,7 @@ class NewsDetailsViewController: UIViewController {
     func setupDetails() {
         newsDetailsTitleLabel?.text = viewModel?.newsDetails?.title
         newsDetailsDescriptionTextView?.text = viewModel?.newsDetails?.description
-        newsDetailsDescriptionTextView.isEditable = true
-        newsDetailsUrlLabel?.text = viewModel?.newsDetails?.url
+        newsDetailsDescriptionTextView.isEditable = false
         newsDetailsImageView?.kf.setImage(with: URL(string: (viewModel?.newsDetails?.urlToImage) ?? ""))
         newsDetailsUrlLabel.addTapGesture { [self] in
             if let url = URL(string: (viewModel?.newsDetails?.url)!) {

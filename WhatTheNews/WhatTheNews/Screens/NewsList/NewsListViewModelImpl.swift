@@ -19,7 +19,6 @@ class NewsListViewModelImpl: NewsListViewModel{
     }
     
     func fetchNewsList() {
-        
         var params: [String: Any] = [:]
         params["apiKey"] = "c49befaba4ab4498a011c607370a88b4"
         params["country"] = "tr"

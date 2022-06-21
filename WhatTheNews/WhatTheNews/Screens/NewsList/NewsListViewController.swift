@@ -21,7 +21,7 @@ class NewsListViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor.systemRed
-       // appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = .black

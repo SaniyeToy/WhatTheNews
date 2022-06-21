@@ -25,11 +25,9 @@ class NewsListTableViewCell: UITableViewCell {
         let margins = UIEdgeInsets(top: 4, left: 4, bottom: 4, right: 4)
         contentView.frame = contentView.frame.inset(by: margins)
         contentView.layer.cornerRadius = 8
-        //contentView.backgroundColor = UIColor.red
         contentView.layer.borderColor = UIColor.lightGray.cgColor
         contentView.layer.borderWidth = 0.5
         contentView.clipsToBounds = true
-     
     }
     
     func register(news: Articles){

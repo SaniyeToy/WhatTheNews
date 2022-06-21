@@ -14,7 +14,6 @@ class NewsDetailsViewController: UIViewController {
     var viewModel:  NewsDetailsViewModel?
     var news : Articles?
     
-    
     @IBOutlet weak var newsDetailsDescriptionTextView: UITextView!
     @IBOutlet weak var newsDetailsTitleLabel: UILabel!
     @IBOutlet weak var newsDetailsUrlLabel: UILabel!

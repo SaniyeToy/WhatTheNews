@@ -32,7 +32,7 @@
 
 ## Usage <a name="Usage"></a>
 
-
+What the news is a news application where you can get breaking news with the help of different parameters. You can view the details of the news on the details page and go to the news site from this page.
 
 
 ## Requiremonts <a name="Requiremonts"></a>

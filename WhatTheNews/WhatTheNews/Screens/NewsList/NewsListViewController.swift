@@ -17,7 +17,7 @@ class NewsListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.setHidesBackButton(true, animated: true)
-        self.title = "News"
+        self.navigationItem.title = "News"
         navigationController?.navigationBar.prefersLargeTitles = true
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor.systemRed
